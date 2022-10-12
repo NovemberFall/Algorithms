@@ -136,8 +136,8 @@ $ java -cp classes com.williamfiset.algorithms.search.BinarySearch
 - [Longest Common Subsequence (LCS)](src/main/java/com/williamfiset/algorithms/dp/LongestCommonSubsequence.java) **- O(nm)**
 - [Longest Increasing Subsequence (LIS)](src/main/java/com/williamfiset/algorithms/dp/LongestIncreasingSubsequence.java) **- O(n<sup>2</sup>)**
 - [Longest Palindrome Subsequence (LPS)](src/main/java/com/williamfiset/algorithms/dp/LongestPalindromeSubsequence.java) **- O(n<sup>2</sup>)**
-- [:movie_camera:](https://www.youtube.com/watch?v=cY4HiiFHO1o) [Traveling Salesman Problem (dynamic programming, iterative)](src/main/java/com/williamfiset/algorithms/graphtheory/TspDynamicProgrammingIterative.java) **- O(n<sup>2</sup>2<sup>n</sup>)**
-- [Traveling Salesman Problem (dynamic programming, recursive)](src/main/java/com/williamfiset/algorithms/graphtheory/TspDynamicProgrammingRecursive.java) **- O(n<sup>2</sup>2<sup>n</sup>)**
+- [:movie_camera:](https://www.youtube.com/watch?v=cY4HiiFHO1o) [Traveling Salesman Problem (dynamic programming, iterative)](src/main/java/com/williamfiset/algorithms/Graph/TspDynamicProgrammingIterative.java) **- O(n<sup>2</sup>2<sup>n</sup>)**
+- [Traveling Salesman Problem (dynamic programming, recursive)](src/main/java/com/williamfiset/algorithms/Graph/TspDynamicProgrammingRecursive.java) **- O(n<sup>2</sup>2<sup>n</sup>)**
 - [Minimum Weight Perfect Matching (iterative, complete graph)](src/main/java/com/williamfiset/algorithms/dp/MinimumWeightPerfectMatching.java) **- O(n<sup>2</sup>2<sup>n</sup>)**
 
 ## Dynamic Programming Problem Examples
@@ -185,57 +185,57 @@ $ java -cp classes com.williamfiset.algorithms.search.BinarySearch
 
 ### Tree algorithms
 
-- [:movie_camera:](https://www.youtube.com/watch?v=2FFq2_je7Lg) [Rooting an undirected tree](src/main/java/com/williamfiset/algorithms/graphtheory/treealgorithms/RootingTree.java) **- O(V+E)**
-- [:movie_camera:](https://www.youtube.com/watch?v=OCKvEMF0Xac) [Identifying isomorphic trees](src/main/java/com/williamfiset/algorithms/graphtheory/treealgorithms/TreeIsomorphism.java) **- O(?)**
-- [:movie_camera:](https://www.youtube.com/watch?v=nzF_9bjDzdc) [Tree center(s)](src/main/java/com/williamfiset/algorithms/graphtheory/treealgorithms/TreeCenter.java) **- O(V+E)**
-- [Tree diameter](src/main/java/com/williamfiset/algorithms/graphtheory/treealgorithms/TreeDiameter.java) **- O(V+E)**
-- [:movie_camera:](https://www.youtube.com/watch?v=sD1IoalFomA) [Lowest Common Ancestor (LCA, Euler tour)](src/main/java/com/williamfiset/algorithms/graphtheory/treealgorithms/LowestCommonAncestorEulerTour.java) **- O(1) queries, O(nlogn) preprocessing**
+- [:movie_camera:](https://www.youtube.com/watch?v=2FFq2_je7Lg) [Rooting an undirected tree](src/main/java/com/williamfiset/algorithms/Graph/treealgorithms/RootingTree.java) **- O(V+E)**
+- [:movie_camera:](https://www.youtube.com/watch?v=OCKvEMF0Xac) [Identifying isomorphic trees](src/main/java/com/williamfiset/algorithms/Graph/treealgorithms/TreeIsomorphism.java) **- O(?)**
+- [:movie_camera:](https://www.youtube.com/watch?v=nzF_9bjDzdc) [Tree center(s)](src/main/java/com/williamfiset/algorithms/Graph/treealgorithms/TreeCenter.java) **- O(V+E)**
+- [Tree diameter](src/main/java/com/williamfiset/algorithms/Graph/treealgorithms/TreeDiameter.java) **- O(V+E)**
+- [:movie_camera:](https://www.youtube.com/watch?v=sD1IoalFomA) [Lowest Common Ancestor (LCA, Euler tour)](src/main/java/com/williamfiset/algorithms/Graph/treealgorithms/LowestCommonAncestorEulerTour.java) **- O(1) queries, O(nlogn) preprocessing**
 
 ### Network flow
 
-- [Bipartite graph verification (adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/networkflow/BipartiteGraphCheckAdjacencyList.java) **- O(V+E)**
-- [:movie_camera:](https://www.youtube.com/watch?v=LdOnanfc5TM) [Max flow & Min cut (Ford-Fulkerson with DFS, adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/networkflow/FordFulkersonDfsSolverAdjacencyList.java) **- O(fE)**
-- [Max flow & Min cut (Ford-Fulkerson with DFS, adjacency matrix)](src/main/java/com/williamfiset/algorithms/graphtheory/networkflow/FordFulkersonDFSAdjacencyMatrix.java) **- O(fV<sup>2</sup>)**
-- [:movie_camera:](https://www.youtube.com/watch?v=RppuJYwlcI8) [Max flow & Min cut (Edmonds-Karp, adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/networkflow/EdmondsKarpAdjacencyList.java) **- O(VE<sup>2</sup>)**
-- [:movie_camera:](https://youtu.be/1ewLrXUz4kk) [Max flow & Min cut (Capacity scaling, adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/networkflow/CapacityScalingSolverAdjacencyList.java) **- O(E<sup>2</sup>log<sub>2</sub>(U))**
-- [:movie_camera:](https://youtu.be/M6cm8UeeziI) [Max flow & Min cut (Dinic's, adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/networkflow/Dinics.java) **- O(EV<sup>2</sup>) or O(E√V) for bipartite graphs**
-- [Maximum Cardinality Bipartite Matching (augmenting path algorithm, adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/networkflow/MaximumCardinalityBipartiteMatchingAugmentingPathAdjacencyList.java) **- O(VE)**
-- [Min Cost Max Flow (Bellman-Ford, adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/networkflow/MinCostMaxFlowWithBellmanFord.java) **- O(E<sup>2</sup>V<sup>2</sup>)**
-- [Min Cost Max Flow (Johnson's algorithm, adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/networkflow/MinCostMaxFlowJohnsons.java) **- O(E<sup>2</sup>Vlog(V))**
+- [Bipartite graph verification (adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/networkflow/BipartiteGraphCheckAdjacencyList.java) **- O(V+E)**
+- [:movie_camera:](https://www.youtube.com/watch?v=LdOnanfc5TM) [Max flow & Min cut (Ford-Fulkerson with DFS, adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/networkflow/FordFulkersonDfsSolverAdjacencyList.java) **- O(fE)**
+- [Max flow & Min cut (Ford-Fulkerson with DFS, adjacency matrix)](src/main/java/com/williamfiset/algorithms/Graph/networkflow/FordFulkersonDFSAdjacencyMatrix.java) **- O(fV<sup>2</sup>)**
+- [:movie_camera:](https://www.youtube.com/watch?v=RppuJYwlcI8) [Max flow & Min cut (Edmonds-Karp, adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/networkflow/EdmondsKarpAdjacencyList.java) **- O(VE<sup>2</sup>)**
+- [:movie_camera:](https://youtu.be/1ewLrXUz4kk) [Max flow & Min cut (Capacity scaling, adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/networkflow/CapacityScalingSolverAdjacencyList.java) **- O(E<sup>2</sup>log<sub>2</sub>(U))**
+- [:movie_camera:](https://youtu.be/M6cm8UeeziI) [Max flow & Min cut (Dinic's, adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/networkflow/Dinics.java) **- O(EV<sup>2</sup>) or O(E√V) for bipartite graphs**
+- [Maximum Cardinality Bipartite Matching (augmenting path algorithm, adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/networkflow/MaximumCardinalityBipartiteMatchingAugmentingPathAdjacencyList.java) **- O(VE)**
+- [Min Cost Max Flow (Bellman-Ford, adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/networkflow/MinCostMaxFlowWithBellmanFord.java) **- O(E<sup>2</sup>V<sup>2</sup>)**
+- [Min Cost Max Flow (Johnson's algorithm, adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/networkflow/MinCostMaxFlowJohnsons.java) **- O(E<sup>2</sup>Vlog(V))**
 
 ### Main graph theory algorithms
 
-- [Articulation points/cut vertices (adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/ArticulationPointsAdjacencyList.java) **- O(V+E)**
-- [Bellman-Ford (edge list, negative cycles, fast & optimized)](src/main/java/com/williamfiset/algorithms/graphtheory/BellmanFordEdgeList.java) **- O(VE)**
-- [:movie_camera:](https://www.youtube.com/watch?v=lyw4FaxrwHg) [Bellman-Ford (adjacency list, negative cycles)](src/main/java/com/williamfiset/algorithms/graphtheory/BellmanFordAdjacencyList.java) **- O(VE)**
-- [Bellman-Ford (adjacency matrix, negative cycles)](src/main/java/com/williamfiset/algorithms/graphtheory/BellmanFordAdjacencyMatrix.java) **- O(V<sup>3</sup>)**
-- [:movie_camera:](https://www.youtube.com/watch?v=oDqjPvD54Ss) [Breadth first search (adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/BreadthFirstSearchAdjacencyListIterative.java) **- O(V+E)**
-- [Breadth first search (adjacency list, fast queue)](src/main/java/com/williamfiset/algorithms/graphtheory/BreadthFirstSearchAdjacencyListIterativeFastQueue.java) **- O(V+E)**
-- [Bridges/cut edges (adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/BridgesAdjacencyList.java) **- O(V+E)**
-- [Find connected components (adjacency list, union find)](src/main/java/com/williamfiset/algorithms/graphtheory/ConnectedComponentsAdjacencyList.java) **- O(Elog(E))**
-- [Find connected components (adjacency list, DFS)](src/main/java/com/williamfiset/algorithms/graphtheory/ConnectedComponentsDfsSolverAdjacencyList.java) **- O(V+E)**
-- [Depth first search (adjacency list, iterative)](src/main/java/com/williamfiset/algorithms/graphtheory/DepthFirstSearchAdjacencyListIterative.java) **- O(V+E)**
-- [Depth first search (adjacency list, iterative, fast stack)](src/main/java/com/williamfiset/algorithms/graphtheory/DepthFirstSearchAdjacencyListIterativeFastStack.java) **- O(V+E)**
-- [:movie_camera:](https://www.youtube.com/watch?v=7fujbpJ0LB4) [Depth first search (adjacency list, recursive)](src/main/java/com/williamfiset/algorithms/graphtheory/DepthFirstSearchAdjacencyListRecursive.java) **- O(V+E)**
-- [:movie_camera:](https://www.youtube.com/watch?v=pSqmAO-m7Lk) [Dijkstra's shortest path (adjacency list, lazy implementation)](src/main/java/com/williamfiset/algorithms/graphtheory/DijkstrasShortestPathAdjacencyList.java) **- O(Elog(V))**
-- [:movie_camera:](https://www.youtube.com/watch?v=pSqmAO-m7Lk) [Dijkstra's shortest path (adjacency list, eager implementation + D-ary heap)](src/main/java/com/williamfiset/algorithms/graphtheory/DijkstrasShortestPathAdjacencyListWithDHeap.java) **- O(Elog<sub>E/V</sub>(V))**
-- [:movie_camera:](https://www.youtube.com/watch?v=8MpoO2zA2l4) [Eulerian Path (directed edges)](src/main/java/com/williamfiset/algorithms/graphtheory/EulerianPathDirectedEdgesAdjacencyList.java) **- O(E+V)**
-- [:movie_camera:](https://www.youtube.com/watch?v=4NQ3HnhyNfQ) [Floyd Warshall algorithm (adjacency matrix, negative cycle check)](src/main/java/com/williamfiset/algorithms/graphtheory/FloydWarshallSolver.java) **- O(V<sup>3</sup>)**
-- [Graph diameter (adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/GraphDiameter.java) **- O(VE)**
-- [:movie_camera:](https://www.youtube.com/watch?v=cIBFEhD77b4) [Kahn's algorithm (topological sort, adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/Kahns.java) **- O(E+V)**
-- [Kruskal's min spanning tree algorithm (edge list, union find)](src/main/java/com/williamfiset/algorithms/graphtheory/KruskalsEdgeList.java) **- O(Elog(E))**
-- [:movie_camera:](https://www.youtube.com/watch?v=JZBQLXgSGfs) [Kruskal's min spanning tree algorithm (edge list, union find, lazy sorting)](src/main/java/com/williamfiset/algorithms/graphtheory/KruskalsEdgeListPartialSortSolver.java) **- O(Elog(E))**
-- [Kosaraju's strongly connected components algorithm (adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/Kosaraju.java) **- O(V+E)**
-- [:movie_camera:](https://www.youtube.com/watch?v=jsmMtJpPnhU) [Prim's min spanning tree algorithm (lazy version, adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/LazyPrimsAdjacencyList.java) **- O(Elog(E))**
-- [Prim's min spanning tree algorithm (lazy version, adjacency matrix)](src/main/java/com/williamfiset/algorithms/graphtheory/LazyPrimsAdjacencyMatrix.java) **- O(V<sup>2</sup>)**
-- [:movie_camera:](https://www.youtube.com/watch?v=xq3ABa-px_g) [Prim's min spanning tree algorithm (eager version, adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/EagerPrimsAdjacencyList.java) **- O(Elog(V))**
-- [Steiner tree (minimum spanning tree generalization)](src/main/java/com/williamfiset/algorithms/graphtheory/SteinerTree.java) **- O(V<sup>3</sup> + V<sup>2</sup> _ 2<sup>T</sup> + V _ 3<sup>T</sup>)**
-- [:movie_camera:](https://www.youtube.com/watch?v=wUgWX0nc4NY) [Tarjan's strongly connected components algorithm (adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/TarjanSccSolverAdjacencyList.java) **- O(V+E)**
-- [:movie_camera:](https://www.youtube.com/watch?v=eL-KzMXSXXI) [Topological sort (acyclic graph, adjacency list)](src/main/java/com/williamfiset/algorithms/graphtheory/TopologicalSortAdjacencyList.java) **- O(V+E)**
-- [Topological sort (acyclic graph, adjacency matrix)](src/main/java/com/williamfiset/algorithms/graphtheory/TopologicalSortAdjacencyMatrix.java) **- O(V<sup>2</sup>)**
-- [Traveling Salesman Problem (brute force)](src/main/java/com/williamfiset/algorithms/graphtheory/TspBruteForce.java) **- O(n!)**
-- [:movie_camera:](https://www.youtube.com/watch?v=cY4HiiFHO1o) [Traveling Salesman Problem (dynamic programming, iterative)](src/main/java/com/williamfiset/algorithms/graphtheory/TspDynamicProgrammingIterative.java) **- O(n<sup>2</sup>2<sup>n</sup>)**
-- [Traveling Salesman Problem (dynamic programming, recursive)](src/main/java/com/williamfiset/algorithms/graphtheory/TspDynamicProgrammingRecursive.java) **- O(n<sup>2</sup>2<sup>n</sup>)**
+- [Articulation points/cut vertices (adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/ArticulationPointsAdjacencyList.java) **- O(V+E)**
+- [Bellman-Ford (edge list, negative cycles, fast & optimized)](src/main/java/com/williamfiset/algorithms/Graph/BellmanFordEdgeList.java) **- O(VE)**
+- [:movie_camera:](https://www.youtube.com/watch?v=lyw4FaxrwHg) [Bellman-Ford (adjacency list, negative cycles)](src/main/java/com/williamfiset/algorithms/Graph/BellmanFordAdjacencyList.java) **- O(VE)**
+- [Bellman-Ford (adjacency matrix, negative cycles)](src/main/java/com/williamfiset/algorithms/Graph/BellmanFordAdjacencyMatrix.java) **- O(V<sup>3</sup>)**
+- [:movie_camera:](https://www.youtube.com/watch?v=oDqjPvD54Ss) [Breadth first search (adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/BreadthFirstSearchAdjacencyListIterative.java) **- O(V+E)**
+- [Breadth first search (adjacency list, fast queue)](src/main/java/com/williamfiset/algorithms/Graph/BreadthFirstSearchAdjacencyListIterativeFastQueue.java) **- O(V+E)**
+- [Bridges/cut edges (adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/BridgesAdjacencyList.java) **- O(V+E)**
+- [Find connected components (adjacency list, union find)](src/main/java/com/williamfiset/algorithms/Graph/ConnectedComponentsAdjacencyList.java) **- O(Elog(E))**
+- [Find connected components (adjacency list, DFS)](src/main/java/com/williamfiset/algorithms/Graph/ConnectedComponentsDfsSolverAdjacencyList.java) **- O(V+E)**
+- [Depth first search (adjacency list, iterative)](src/main/java/com/williamfiset/algorithms/Graph/DepthFirstSearchAdjacencyListIterative.java) **- O(V+E)**
+- [Depth first search (adjacency list, iterative, fast stack)](src/main/java/com/williamfiset/algorithms/Graph/DepthFirstSearchAdjacencyListIterativeFastStack.java) **- O(V+E)**
+- [:movie_camera:](https://www.youtube.com/watch?v=7fujbpJ0LB4) [Depth first search (adjacency list, recursive)](src/main/java/com/williamfiset/algorithms/Graph/DepthFirstSearchAdjacencyListRecursive.java) **- O(V+E)**
+- [:movie_camera:](https://www.youtube.com/watch?v=pSqmAO-m7Lk) [Dijkstra's shortest path (adjacency list, lazy implementation)](src/main/java/com/williamfiset/algorithms/Graph/DijkstrasShortestPathAdjacencyList.java) **- O(Elog(V))**
+- [:movie_camera:](https://www.youtube.com/watch?v=pSqmAO-m7Lk) [Dijkstra's shortest path (adjacency list, eager implementation + D-ary heap)](src/main/java/com/williamfiset/algorithms/Graph/DijkstrasShortestPathAdjacencyListWithDHeap.java) **- O(Elog<sub>E/V</sub>(V))**
+- [:movie_camera:](https://www.youtube.com/watch?v=8MpoO2zA2l4) [Eulerian Path (directed edges)](src/main/java/com/williamfiset/algorithms/Graph/EulerianPathDirectedEdgesAdjacencyList.java) **- O(E+V)**
+- [:movie_camera:](https://www.youtube.com/watch?v=4NQ3HnhyNfQ) [Floyd Warshall algorithm (adjacency matrix, negative cycle check)](src/main/java/com/williamfiset/algorithms/Graph/FloydWarshallSolver.java) **- O(V<sup>3</sup>)**
+- [Graph diameter (adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/GraphDiameter.java) **- O(VE)**
+- [:movie_camera:](https://www.youtube.com/watch?v=cIBFEhD77b4) [Kahn's algorithm (topological sort, adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/Kahns.java) **- O(E+V)**
+- [Kruskal's min spanning tree algorithm (edge list, union find)](src/main/java/com/williamfiset/algorithms/Graph/KruskalsEdgeList.java) **- O(Elog(E))**
+- [:movie_camera:](https://www.youtube.com/watch?v=JZBQLXgSGfs) [Kruskal's min spanning tree algorithm (edge list, union find, lazy sorting)](src/main/java/com/williamfiset/algorithms/Graph/KruskalsEdgeListPartialSortSolver.java) **- O(Elog(E))**
+- [Kosaraju's strongly connected components algorithm (adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/Kosaraju.java) **- O(V+E)**
+- [:movie_camera:](https://www.youtube.com/watch?v=jsmMtJpPnhU) [Prim's min spanning tree algorithm (lazy version, adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/LazyPrimsAdjacencyList.java) **- O(Elog(E))**
+- [Prim's min spanning tree algorithm (lazy version, adjacency matrix)](src/main/java/com/williamfiset/algorithms/Graph/LazyPrimsAdjacencyMatrix.java) **- O(V<sup>2</sup>)**
+- [:movie_camera:](https://www.youtube.com/watch?v=xq3ABa-px_g) [Prim's min spanning tree algorithm (eager version, adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/EagerPrimsAdjacencyList.java) **- O(Elog(V))**
+- [Steiner tree (minimum spanning tree generalization)](src/main/java/com/williamfiset/algorithms/Graph/SteinerTree.java) **- O(V<sup>3</sup> + V<sup>2</sup> _ 2<sup>T</sup> + V _ 3<sup>T</sup>)**
+- [:movie_camera:](https://www.youtube.com/watch?v=wUgWX0nc4NY) [Tarjan's strongly connected components algorithm (adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/TarjanSccSolverAdjacencyList.java) **- O(V+E)**
+- [:movie_camera:](https://www.youtube.com/watch?v=eL-KzMXSXXI) [Topological sort (acyclic graph, adjacency list)](src/main/java/com/williamfiset/algorithms/Graph/TopologicalSortAdjacencyList.java) **- O(V+E)**
+- [Topological sort (acyclic graph, adjacency matrix)](src/main/java/com/williamfiset/algorithms/Graph/TopologicalSortAdjacencyMatrix.java) **- O(V<sup>2</sup>)**
+- [Traveling Salesman Problem (brute force)](src/main/java/com/williamfiset/algorithms/Graph/TspBruteForce.java) **- O(n!)**
+- [:movie_camera:](https://www.youtube.com/watch?v=cY4HiiFHO1o) [Traveling Salesman Problem (dynamic programming, iterative)](src/main/java/com/williamfiset/algorithms/Graph/TspDynamicProgrammingIterative.java) **- O(n<sup>2</sup>2<sup>n</sup>)**
+- [Traveling Salesman Problem (dynamic programming, recursive)](src/main/java/com/williamfiset/algorithms/Graph/TspDynamicProgrammingRecursive.java) **- O(n<sup>2</sup>2<sup>n</sup>)**
 
 # Linear algebra
 
